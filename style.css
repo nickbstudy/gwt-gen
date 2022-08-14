@@ -21,8 +21,8 @@
     grid-area: 'playerGrid';
     margin: auto;
     display: grid;
-    grid-template-rows: repeat(3, 100px);
-    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(3, 90px);
+    grid-template-columns: repeat(4, 90px);
     grid-template-areas: 
     '1 2 3 4'
     '5 6 7 8'
@@ -30,21 +30,21 @@
 }
 
 .container > div {
-    background-color: aquamarine;
+    background-color: rgb(179, 212, 255);
     border: 2px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .trail {
     grid-area: 'trailGrid';
     margin: auto;
     display: grid;
-    grid-template-columns: 130px repeat(7,50px);
-    grid-template-rows: 40px 40px;
+    grid-template-columns: 110px repeat(7,35px);
+    grid-template-rows: 35px 35px;
     grid-template-areas: 
     'topWord ba bb bc bd be bf bg'
     'botWord t1 t2 t3 t4 t5 t6 t7';
@@ -55,9 +55,10 @@
     margin: 0;
     justify-content: center;
     background-color: rgb(224, 206, 186);
-    border: 2px solid black;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 2em
+    border: 1px solid black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.5em
 }
 .btnHolder {
     display: flex;
@@ -67,7 +68,7 @@
 }
 button {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
     box-shadow: 5px 5px 5px #888888;
     border-radius: 8px;
     margin-left: 20px;
