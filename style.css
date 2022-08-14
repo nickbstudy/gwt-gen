@@ -6,13 +6,20 @@
 .holder {
     padding: 0;
     margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    width: 95vw;
+    height: 95vh;
+    display: grid;
+    grid-template-rows: 4fr 3fr 2fr;
+    grid-template-areas:
+    'playerGrid'
+    'boardGrid'
+    'buttons';
+
+
 }
 .container {
-    margin: 50px auto;
+    grid-area: 'playerGrid';
+    margin: auto;
     display: grid;
     grid-template-rows: repeat(3, 100px);
     grid-template-columns: repeat(4, 100px);
@@ -33,6 +40,8 @@
 }
 
 .trail {
+    grid-area: 'trailGrid';
+    margin: auto;
     display: grid;
     grid-template-columns: 130px repeat(7,50px);
     grid-template-rows: 40px 40px;
@@ -43,6 +52,7 @@
 .trail > div {
     display: flex;
     align-items: center;
+    margin: 0;
     justify-content: center;
     background-color: rgb(224, 206, 186);
     border: 2px solid black;
@@ -53,7 +63,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin: auto;
 }
 button {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
